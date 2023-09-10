@@ -2858,7 +2858,7 @@ border-color: rgba(var(--v-border-color), var(--v-border-opacity)) !important;
     padding-left: 0.5rem !important;
     padding-right: 0.75rem !important;
     padding-top: 0 !important;
-    width:  fill-available !important;
+    width:  stretch !important;
  }
 
  /* .m-input .m-input-label{
@@ -2874,7 +2874,7 @@ border-color: rgba(var(--v-border-color), var(--v-border-opacity)) !important;
  }
 
  .m-phone-number-input{
-  width: -webkit-fill-available;
+  width: stretch;
  }
 
  .file-name-input .v-field__outline__end{
@@ -2954,7 +2954,7 @@ border-color: rgba(var(--v-border-color), var(--v-border-opacity)) !important;
 }
 
 .v-checkbox .v-selection-control{
-  min-width: -webkit-fill-available;
+  min-width: stretch;
   display: block;
 }
 
