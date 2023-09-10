@@ -1,0 +1,219 @@
+@use "sass:map";
+@use "@core/scss/base";
+
+// Layout
+@use "vertical-nav";
+@use "horizontal-nav";
+@use "default-layout-w-vertical-nav";
+@use "default-layout-w-horizontal-nav";
+
+// Skins
+@use "skins";
+
+// Components
+@use "components";
+
+// Utilities
+@use "utilities";
+@use '../custom/custon-scss.scss';
+@use '../custom/responsive.scss';
+
+// ========== All Css for My Account > Transactions =================
+
+// -------Rating Css -------
+.v-rating .v-rating__wrapper .v-btn--density-default {
+    --v-btn-height: 48px !important;
+}
+.v-rating__item{
+    .v-btn__content {
+        svg{
+            width: 56px ;
+            height: 66px;
+            left: 20px;
+        }
+        path{
+            stroke-width: 0.60;
+            // stroke:#ded6d6;
+        }
+        
+    }
+}
+
+// -------- Heading Title for modal --------------
+.heading-title{
+    font-size: 30px;
+    font-weight: 600;
+    color: #28303d;
+    line-height: 64px;
+    text-transform: capitalize;
+}
+
+// ----- Button shawdow ------
+.submit-btn.v-btn--elevated:hover, .v-btn--elevated:focus {
+    /* box-shadow: 0 10px 22px rgba(var(--v-shadow-key--color), 0.15), 0 0 transparent, 0 0 transparent; */
+    box-shadow: 0px 4px 13px 0px rgb(25, 24, 24);
+}
+// -------button fontsize -----
+.submit-btn{
+  .v-btn__content{
+    font-size: 16px;
+  }
+}
+
+// =======Payment Request ===========
+
+// -----payment popup-------------
+.pay-member{
+    .flex {
+        background-color: #a5e5e3;
+        border-radius: 45px;
+        padding: 2% 5% !important;
+        width: 70%;
+    }
+    .avatar-1{
+        width: 50px;
+        height: 50px;
+        border: 2px solid #ffff;
+        // margin: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px 30px 5px 30px;
+        font-size: 26px;
+        font-family: Poppins;
+        font-weight: 400;
+    }
+    .arrow-image{
+        margin: 0px 20px -8px 13px;
+    }
+    
+}
+.payment-popup .avatar-2 {
+  background-color: #1e8d9b !important;
+  /* margin-left: 5%; */
+}
+.payment-popup .blue-txt-popup {
+    color: #82e0dd;
+    font-family: "Poppins", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 2px;
+    margin: 5% 0 6% !important;
+}
+.bg-input-icon{
+    
+  .v-field{
+    margin-left: 65px;
+    padding: 8px 0px 8px;
+  }
+  
+    .v-field__input{
+        &::placeholder{
+            color: white !important;
+            font-size: 16px !important;
+        }
+    } 
+    .v-field--disabled {
+        opacity: 1 !important;
+        pointer-events: none;
+    }
+    .v-field__outline {
+        --v-field-border-opacity: -0.62 !important;
+    }
+
+}
+.gray-txt-popup{
+    .v-field{
+    padding: 8px 0px 8px;
+  }
+  .v-field__outline {
+    --v-field-border-opacity: -0.62 !important;
+  }
+  .v-field__input{
+    text-align: center;
+    font-size: 18px;
+        &::placeholder{
+            color: white !important;
+            font-size: 18px !important;
+        }
+    } 
+}
+.paying-btn{
+    border-radius: 10px;
+    font-size: 18px !important;
+    width: 80% !important;
+    padding: 7px;
+
+    &:hover{
+        box-shadow: 0px 2px 5px 0px #97d0ce ;
+    }
+}
+
+.text-body{
+    .v-card-text{
+        margin-top: -41px;
+    }
+}
+
+.input-text .pt-text {
+  z-index: 10;
+  padding-block-start: 9px !important;
+}
+
+
+// ================== Side Scroll in all theme
+
+html {
+  &::-webkit-scrollbar {
+    inline-size: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 0;
+    background: transparent !important;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgb(145, 142, 142);
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgb(145, 142, 142);
+  }
+}
+
+
+// Auth screen image
+.signin-image {
+  block-size: 60px;
+  inline-size: 231px;
+}
+
+
+.w270{
+  width: 270px;
+}
+
+.d-content{
+  display: content !important;
+}
+
+.open-btn-bg{
+  font-family: Poppins,sans-serif;
+  transition: all .2s ease;
+  background-color: #28303D !important;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: fit-content;
+  height: 40px !important;
+}
+.open-btn-bg:hover{
+  box-shadow:0 8px 25px -8px;
+}

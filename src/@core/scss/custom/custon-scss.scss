@@ -1,0 +1,920 @@
+// =================== Confirm Account Stepper =======================
+.maincard {
+  //  margin-top: 13%;
+  border-radius: 0px;
+}
+
+.h-screen {
+  display: flex;
+  align-content: center;
+}
+
+.c__account {
+  background-color: #eff2f7 !important;
+}
+
+.login-blue-side {
+  height: 100%;
+}
+
+.c__account .login-blue-side {
+  background-image: linear-gradient(to bottom, #28303d 0%, #28303d 1%, #485f84 100%);
+}
+
+.c__account .login-blue-side img {
+  max-width: 250px;
+  margin: 30px auto;
+  display: block;
+}
+
+.c__account .vx-card .vx-card__collapsible-content .vx-card__body {
+  padding: 0px
+}
+
+.c__account .login-blue-side {
+  padding: 25px
+}
+
+.c__account .login-blue-side .stepper-steps {
+  padding-left: 60px;
+  position: relative;
+  margin-top: 50px;
+}
+
+.c__account .login-blue-side .stepper-steps::before {
+  content: '';
+  position: absolute;
+  height: 98%;
+  width: 1px;
+  background: #ffffff;
+  opacity: 0.5;
+  left: 35px;
+}
+
+.c__account .login-blue-side .stepper-steps h5 {
+  font-size: 17px;
+  color: #a5afbe;
+  font-weight: 400;
+  margin: 28px 0px;
+  position: relative;
+
+}
+
+.c__account .login-blue-side .stepper-steps h5.active-step,
+.c__account .login-blue-side .stepper-steps h5.active-step-success {
+  color: #ffff;
+
+}
+
+.bg-btn-info {
+  width: 45px !important;
+  height: 45px !important;
+  background: #82e0dd !important;
+
+}
+
+.stepper-steps h5::before {
+  content: '';
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background: #a5afbe;
+  left: -40px;
+  top: -5px;
+  border-radius: 5px
+}
+
+.stepper-steps h5.active-step::before {
+  background: #82e0dd
+}
+
+.stepper-steps h5.active-step-success::before {
+  background: #82e0dd;
+  content: '\2713' !important;
+  font-family: 'feather' !important;
+  color: #fff;
+  text-align: center;
+
+}
+
+.stepper-steps h5.fail-step::before {
+  background: #FF9800;
+  content: '!';
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+}
+
+.stepper-head h1 {
+  color: #000000;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 52px;
+  font-weight: 600;
+  width: calc(100% - 75px);
+  text-transform: capitalize;
+
+}
+
+.stepper-head {
+  padding-top: 55px;
+}
+
+.stepper-head h2,
+.step-h2 {
+  color: #000000;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 40px;
+
+}
+
+.stepper-head .back-link {
+  color: #28313e;
+  font-size: 17px;
+  font-weight: 400;
+  /* top: 54px; */
+  /* top: 85px;
+  right: 51px;
+  position: absolute; */
+}
+
+.c__account .includeIconOnly {
+  width: 45px !important;
+  height: 45px !important;
+}
+
+.fail-step .steps-index {
+  bottom: 40px;
+}
+
+.stepper-head .back-link i {
+
+  font-size: 20px;
+  font-weight: 400;
+  vertical-align: -0.1rem;
+
+}
+
+.confirm-form {
+  padding-right: 50px;
+}
+
+.confirm-form .gray_txt {
+  color: #888888;
+  font-size: 18px;
+  font-weight: 500 !important;
+  line-height: 25px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.confirm-form .email_txt {
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 31px;
+}
+
+.confirm-form .vs-con-input-label {
+  width: 50px;
+  box-shadow: 0 0 10px rgba(83, 83, 83, 0.09);
+  border-radius: 10px;
+  background-color: #ffffff;
+
+}
+
+.steps-index {
+  font-size: 17px;
+  font-weight: 400;
+  color: #bebebe;
+}
+
+.confirm-form .vs-input--input.large {
+  color: #888888;
+  font-size: 34px !important;
+  padding: 0.5rem !important;
+  text-align: center;
+  border: 1px solid transparent !important;
+
+}
+
+.confirm-form {
+  padding-left: 0rem !important;
+}
+
+
+.confirm-form form {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+
+.confirm-form .margin-right {
+  margin-right: 0px;
+}
+
+.confirm-form .vs-button-silva-dark.vs-button-filled {
+  background: #485f84 !important;
+  /* margin-top: 1rem; */
+  font-size: 20px;
+}
+
+.confirm-bottom {
+  padding-top: 5% !important;
+  padding-bottom: 0% !important;
+}
+
+.bottom-50 {
+  bottom: 50px;
+}
+
+.confirm-form form .input-bg-blue .vs-input--input.large {
+  background: #485f84 !important
+}
+
+.bg-btn-blue {
+  background: #485f84 !important
+}
+
+.padding-bottom-23 {
+  padding-bottom: 23% !important;
+}
+
+.padding-bottom-10 {
+  padding-bottom: 20% !important;
+}
+
+.padding-bottom-20 {
+  padding-bottom: 33% !important;
+}
+
+.padding-bottom-40 {
+  padding-bottom: 40% !important;
+}
+
+.steps-index {
+  /* position: absolute;
+  right: 51px; */
+
+  /* bottom: 70px; */
+  cursor: pointer;
+
+  font-size: 17px;
+  font-weight: 400;
+
+  color: #bebebe;
+}
+
+.steps-index span {
+  color: #334055;
+}
+
+.success-step .padding-bottom-10 {
+  padding-bottom: 27% !important;
+}
+
+.stepper-steps h5.active-step-success::before {
+  background: #82e0dd;
+  /* content: '\2713'; */
+  content: '\E83F';
+  font-family: 'feather' !important;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+
+}
+
+.membership .stepper-head .back-link {
+  top: 72px;
+}
+
+.membership-list {
+  list-style: none;
+  margin: 1.4rem 0;
+}
+
+.membership-list li {
+  color: #626262;
+  margin-left: 25px;
+  position: relative;
+  line-height: 2.3;
+}
+
+.membership-list li::before {
+  content: "●" !important;
+  font-size: 19px !important;
+  top: -6px;
+  color: #82e0dd;
+  left: -25px;
+  position: absolute;
+
+}
+
+.rupee-img.width-16 {
+  width: 16px !important;
+}
+
+/* .payment-form.mb-0{
+  padding-bottom:0px !important;
+} */
+.payment-box .gray_txt.pb-0 {
+  padding-bottom: 10px !important;
+}
+
+.confirm-form .light-blue-btn {
+  background-color: #e6f9f8;
+  font-weight: 300;
+  color: #000;
+  font-size: 22px;
+  border-radius: 10px;
+  border: 1px solid #82e0dd;
+  line-height: 52px;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 1.5rem 3.3rem 1.3rem;
+  cursor: auto;
+
+  .currency-image {
+    width: 25px;
+  }
+
+  &:hover,
+  &.active {
+    background-color: #ffffff !important;
+  }
+}
+
+.confirm-form .v-button-silva-dark.v-btn.light-blue-btn .light-text {
+  font-weight: 300;
+  font-size: 22px;
+}
+
+.strip-img img {
+  width: 135px;
+}
+
+.payment-box {
+  padding-right: 50px;
+}
+
+.payment-form .vs-con-input-label {
+  width: 100%;
+  margin-bottom: 1rem;
+  box-shadow: none;
+
+}
+
+.payment-box .gray_txt {
+  font-size: 14px;
+  padding-top: 10px;
+  color: #000;
+}
+
+.payment-box .email_txt {
+  font-size: 14px;
+  font-style: italic;
+  color: #82e0dd;
+}
+
+.payment-box .email_txt span {
+  font-size: 14px;
+  font-style: normal;
+  color: #000;
+  padding-left: 5px;
+  padding-right: 5px;
+
+}
+
+.payment-box .payment-sub {
+  border-bottom: 1px solid #9999;
+  border-top: 1px solid #9999;
+  line-height: 2;
+  color: #485f84;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  margin-top: 0.5rem;
+}
+
+.payment-box .payment-sub .light-text {
+  font-weight: 300;
+  font-size: 16px;
+  color: #000;
+}
+
+.address-form .vs-input--placeholder.large {
+  font-size: 14px !important;
+  text-align: left;
+  line-height: 12px;
+}
+
+.black_txt {
+  color: #000;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.note_txt {
+  color: #626262;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.note_txt .note {
+  font-size: 14px;
+  color: #82e0dd;
+}
+
+.c__account .lg\:w-2\/5 {
+  width: 30% !important;
+}
+
+.c__account .lg\:w-3\/5 {
+  width: 70% !important;
+}
+
+.confirm-form .categories-check .con-vs-checkbox .vs-checkbox {
+  float: left;
+  position: absolute;
+  right: 0;
+}
+
+.confirm-form .categories-check .v-checkbox .con-slot-label {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width:991px) {
+  .hidden {
+    display: none;
+  }
+
+}
+
+.full-width {
+  width: 700px !important;
+}
+
+@media only screen and (max-width:991px) {
+  .full-width {
+    width: auto !important;
+  }
+}
+
+// -------- Confirm-account components-------------------
+.confirm-form .email .vs-input--input.large {
+  color: #000000;
+  font-size: 18px !important;
+  padding: 1rem 0.5rem !important;
+  text-align: left;
+  border: 1px solid transparent !important;
+}
+
+.otp-input {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  margin: 0 10px;
+  font-size: 20px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.otp-input::-webkit-inner-spin-button,
+.otp-input::-webkit-outer-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+
+// ------------- Memebership Componenets --------------
+.price-text {
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+}
+
+.light-text {
+  color: black;
+  font-weight: 300;
+  font-size: 22px;
+}
+
+.confirm-bottoms {
+  padding-top: 0% !important;
+  padding-bottom: 0% !important;
+}
+
+// --------Payment, payment successful and fail payment components-------
+.sucess-payment-pb {
+  padding-top: 90px !important;
+}
+
+.simple-padding {
+  padding-bottom: 50% !important;
+}
+
+.textboxborder {
+  .v-field__input {
+    text-transform: capitalize !important;
+  }
+}
+
+
+// ----------- Address Components -------------------
+
+.addres-gps {
+  font-size: 12px !important;
+  font-weight: 500;
+  color: #888;
+
+  .v-field__outline {
+    color: #82e0dd !important;
+    --v-field-border-opacity: 1.38 !important;
+  }
+}
+
+.fix-width {
+  width: 700px;
+}
+
+@media only screen and (max-width: 767.9px) {
+  .fix-width {
+    width: 0px;
+  }
+}
+
+.back-btn {
+  font-weight: 400;
+  vertical-align: -0.1rem;
+  font-size: 17px;
+  color: #28313e;
+}
+
+.business_address {
+  font-size: 21.14px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #2c2c2c;
+}
+
+// ------------- Category components----------------------
+.select-category-div {
+  .v-input__control {
+    width: 100%;
+    margin-left: 17px !important;
+
+    .v-selection-control__wrapper {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+
+}
+
+
+
+.verify-btn {
+  padding: 11px 16px 40px 15px;
+  font-size: 20px;
+}
+
+// ---------Next Button
+.next-btn {
+  padding: 0.7rem 1.5rem 2.7rem 1.5rem !important;
+  font-size: 20px;
+}
+
+
+
+// -------Login and Forgot password
+.input-text {
+  .v-field__outline {
+    border: 1px solid #d7d7d7;
+    border-radius: 12px !important;
+
+    --v-field-border-opacity: -0.62;
+  }
+
+  .v-icon--size-default {
+    font-size: calc(var(--v-icon-size-multiplier) * 2.2em);
+  }
+
+  .v-field.v-field--appended {
+    border-radius: 12px;
+  }
+
+  .v-field.v-field--prepended {
+    border-radius: 12px;
+  }
+
+  .v-text-field .v-field--no-label input,
+  .v-text-field .v-field--active input {
+    z-index: 0;
+    border-radius: 12px;
+    margin-inline-start: -29px;
+    padding-inline-start: 38px;
+  }
+
+  .v-field--error:not(.v-field--disabled) .v-field__append-inner>.v-icon,
+  .v-field--error:not(.v-field--disabled) .v-field__clearable>.v-icon {
+    color: #485f84 !important;
+  }
+
+  .v-field:hover .v-field__outline {
+    --v-field-border-opacity: -0.62;
+  }
+
+  .v-field.v-field--focused .v-field__outline,
+  .v-input.v-input--error .v-field__outline {
+    --v-field-border-opacity: -0.62;
+  }
+}
+
+.text-password {
+  .v-field__field {
+    margin-inline-end: -38px;
+  }
+}
+
+.input-text .v-field__input {
+  height: 55px;
+  padding-block: 19px !important;
+  padding-inline: 38px !important;
+}
+
+.login-input .v-field {
+  border-radius: 12px;
+  padding-block: 8px;
+  padding-inline: 8px;
+}
+
+.v-card .v-card-text {
+  line-height: 0.5;
+}
+
+.forgot {
+  margin-inline-start: 430px !important;
+}
+
+// svg.iconify {
+//   color: #485f84;
+// }
+
+// -------Register Select country-----------------
+.register-state-select {
+  .v-field__outline {
+    border: 1px solid #d7d7d7 !important;
+    border-radius: 12px !important;
+
+    --v-field-border-opacity: -0.62 !important;
+  }
+
+  .v-field__outline .text-primary {
+    border-radius: 12px !important;
+  }
+
+  .v-field__append-inner svg {
+    margin-block-start: 0.50em !important;
+  }
+
+  .v-field {
+    border-radius: 12px !important
+  }
+}
+
+.capitalize-text {
+  .v-field__input {
+    text-transform: capitalize !important;
+  }
+
+}
+
+// -------All Select Item in hover color ----------------------
+.v-list-item[tabindex="0"]:not(.v-list-item--active):hover {
+  color: white;
+  background: #82e0dd;
+}
+
+.register-state-select {
+  .v-field__field {
+    padding-block: 8px !important;
+    padding-inline: 1px !important;
+  }
+}
+
+// -----------Phone Number Design ----------------
+.maz-phone-input {
+
+  // height: 3.5rem !important;
+  .m-input-wrapper.--default-border {
+    border-color: #d7d7d7 !important;
+  }
+
+  .m-input-wrapper {
+    border-width: 1px !important;
+  }
+
+  .m-input.--md {
+    height: 3.4rem !important;
+  }
+
+  .m-phone-number-input__select[data-v-b43ec161] .m-select-input .m-input-wrapper {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 13px !important;
+    border-top-left-radius: 13px !important;
+  }
+
+  .maz-phone-input .m-phone-number-input__input.--border-radius[data-v-b43ec161] .m-input-wrapper {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 12px !important;
+    border-top-right-radius: 12px !important;
+  }
+
+  .m-phone-number-input__country-flag {
+    .maz-flag {
+      // padding: 9px;
+      height: 19px !important;
+      background-color: transparent !important;
+    }
+  }
+
+  .maz-flag[data-v-b43ec161] {
+    // background-color: whit !important;
+  }
+
+  .v-input__details {
+    display: none;
+  }
+}
+
+.maz-phone-input {
+  .m-select-input__toggle-button {
+    display: contents !important;
+  }
+}
+
+.m-select-input {
+  .m-input-label {
+    display: none !important;
+  }
+}
+
+.maz-phone-input {
+  .m-input-label {
+    display: block;
+  }
+}
+
+.maz-phone-div {
+  margin-bottom: -11px;
+
+  .v-input__details {
+    margin-top: -15px !important;
+  }
+}
+
+.m-input.--should-up .m-input-label[data-v-447d0d16] {
+  display: none !important;
+}
+
+.image-hidden {
+  color: #334055;
+
+  .v-field--error {
+    display: none !important;
+  }
+}
+
+.checkbox {
+  .v-checkbox-btn .v-selection-control__input {
+    left: 2px !important;
+  }
+
+  .v-checkbox-btn .v-selection-control__input .v-icon.iconify--custom {
+    // inline-size: 2.125rem !important;
+  }
+}
+
+// -------MemberShip -----------
+@media only screen and (max-width: 990.1px) {
+  .membership-div {
+    max-width: 100%;
+    flex: 0 0 100.666667%;
+    padding: 25px !important;
+  }
+}
+
+// ---------Website Link Component ------------------
+.website-link {
+  .v-field__input {
+    height: 20px;
+  }
+}
+
+// ---------Edit Profile Modules in personal Details component css
+
+.m-input-label {
+  font-weight: 400 !important;
+  font-family: 'Poppins' !important;
+}
+
+.edit-personal-email {
+  .v-field {
+    opacity: 0.85 !important;
+  }
+}
+
+.pay-input {
+  .vs-con-input {
+    width: 155px;
+    min-height: 60px;
+
+    .v-field__input {
+      padding-left: 58px !important;
+    }
+  }
+
+  .till-month {
+    text-align: center;
+  }
+}
+
+.quick-pay {
+  padding: 80px 10px;
+  margin: 0;
+
+  .pay-member {
+    .rounded-arrow {
+      max-width: 270px;
+      width: 100%;
+      border-radius: 45px;
+
+      @media only screen and (max-width: 767px) {
+        max-width: 220px;
+        width: 100%;
+      }
+
+      @media only screen and (max-width: 480px) {
+        max-width: 210px;
+        width: 100%;
+      }
+
+      @media only screen and (max-width: 1000px) {
+
+        .avatar-1 {
+          margin: 3px;
+          height: 50px;
+          width: 50px;
+          font-size: 26px;
+        }
+      }
+
+      @media only screen and (max-width: 767px) {
+
+        .avatar-1 {
+          margin: 3px;
+          height: 35px;
+          width: 35px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .confirm-cancel-btn {
+    flex-wrap: wrap;
+    padding: 20px 40px 0 40px;
+
+    @media only screen and (max-width: 480px) {
+      padding: 20px 12px 0 12px;
+    }
+  }
+
+  .pin-screen {
+    .v-card-text {
+      @media only screen and (max-width: 480px) {
+        padding: 20px;
+      }
+
+      .please-enter {
+        line-height: 1;
+      }
+    }
+    .v-card-actions {
+      padding: 20px 40px 40px 40px;
+
+      @media only screen and (max-width: 480px) {
+        padding: 20px 12px 20px 12px;
+      }
+    }
+  }
+}
+
+.login-parent {
+  padding: 60px 0;
+  margin: 0;
+}

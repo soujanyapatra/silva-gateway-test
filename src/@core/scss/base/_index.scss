@@ -1,0 +1,704 @@
+@use "sass:map";
+
+// Layout
+@use "vertical-nav";
+@use "horizontal-nav";
+@use "default-layout";
+@use "default-layout-w-vertical-nav";
+@use "default-layout-w-horizontal-nav";
+
+// Layouts package
+@use "layouts";
+
+// Skins
+@use "skins";
+
+// Components
+@use "components";
+
+// Utilities
+@use "utilities";
+
+// Route Transitions
+@use "route-transitions";
+
+// Misc
+@use "misc";
+
+// Dark
+@use "dark";
+
+// libs
+@use "libs/perfect-scrollbar";
+
+a {
+  color: rgb(var(--v-theme-primary));
+  text-decoration: none;
+}
+
+// Vuetify 3 don't provide margin bottom style like vuetify 2
+p {
+  margin-block-end: 1rem;
+}
+
+// Iconify icon size
+svg.iconify {
+  block-size: 1em;
+  inline-size: 1em;
+}
+
+
+
+.font-size-large {
+  font-size: large;
+  font-weight: 480;
+  line-height: normal;
+}
+
+.font-weight-x-larger {
+  color: #28303d;
+  font-size: 26px;
+  font-weight: 700 !important;
+  line-height: normal;
+}
+
+.active-breadcrumb {
+  color: #82e0dd;
+  font-weight: 420;
+}
+
+.breadcrumb-inactive {
+  min-width: max-content;
+  margin-left: 2px;
+  color: #484143;
+  font-size: 16px;
+}
+
+.text-content {
+  color: #403749;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  min-width: max-content;
+}
+
+.approved {
+  display: flex;
+  align-items: center;
+  color: #00d19c !important;
+}
+
+.v-data-table-header__content {
+  color: #28303d;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.card-border-bg {
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+}
+
+.font-weight-larger {
+  color: #2c2c2c;
+  font-family: system-ui;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.card-border {
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  margin: 0 22px 22px 22px;
+}
+
+.remove-footer {
+  .v-data-table-footer {
+    display: none !important;
+  }
+}
+
+.dashboard-desc-card {
+  display: block;
+  color: black;
+  font-size: 14px;
+  line-height: 14px;
+  margin-block-start: 7px;
+}
+
+.user-profile-subtitle-line {
+  border-inline-start: 3px solid #82e0dd;
+  padding-inline-start: 15px;
+
+  .user-profile-title {
+    color: #262626;
+    font-size: 14px;
+  }
+
+  .user-profile-subtitle {
+    color: #888;
+  }
+}
+
+.layout-vertical-nav .overlay-nav {
+  background-color: #28303d !important;
+}
+
+.router-link-active .router-link-exact-active {
+  margin: 10px !important;
+  background-color: #00d19c !important;
+}
+
+.button-bg {
+  font-size: smaller;
+  font-weight: 600;
+  max-block-size: 33px;
+}
+
+.w150 {
+  inline-size: 150px;
+}
+
+.w250{
+  inline-size: 250px;
+}
+
+.w180{
+  inline-size: 180px;
+}
+
+.font-larger {
+  color: #2c2c2c;
+  font-family: inherit;
+  font-size: 22.36px;
+  font-weight: bolder;
+  line-height: 1.3;
+}
+
+.capitalize{
+  text-transform: capitalize;
+}
+
+.dashboard-coin-details{
+  font-weight: bolder !important;
+  color: black;
+  font-family: inherit;
+  line-height: 1.2;
+}
+.card-desc{
+  color: black;
+  line-height: 1.2;
+  display: block !important;
+  margin-bottom: -30px;
+}
+
+.font-weight-medium{
+  font-size: medium;
+  color: #262626;
+}
+
+.black{
+  color: #262626;
+}
+.layout-content-wrapper{
+  .layout-navbar .navbar-blur{
+    z-index: 99 !important;
+  }
+}
+
+.custom-bg{
+  .v-field__field{
+    border-radius: 3px;
+    background-color: #e6f9f8 !important;
+  }
+  ::placeholder{
+    color: #585656 !important;
+    font-size: 14px;
+  }
+}
+
+.line-normal {
+  line-height: normal;
+}
+
+.primary{
+  color: #82e0dd;
+}
+
+.textbox-custom{
+  border: none!important;
+  background-color: transparent;
+  text-align: center;
+  -webkit-transition: none;
+  color: #fff!important;
+  font-family: Poppins,Helvetica,Arial,sans-serif;
+  font-size: 20px!important;
+  line-height: 1.5!important;
+  font-weight: 400;
+  transition: none;
+}
+
+
+.custom-card{
+  min-width: 400px;
+  justify-content: center;
+  display: flex;
+  .v-field__overlay{
+    background-color: white !important;
+  }
+}
+
+table.v-table tbody td {
+  height: 40px;
+  border: none;
+}
+.theme--light.v-table tbody tr:not(:last-child) {
+  border-bottom: none;
+}
+
+.nav-link{
+  font-weight: 400 !important;
+}
+
+.nav-group-label{
+  font-weight: 400 !important;
+}
+.v-tab__slider{
+  color: #82E0DD;
+}
+
+.btn-text{
+  position: relative;
+  color: inherit;
+  display: inline-block;
+  margin: 0px 20px 0px 20px;
+  font-weight: 400;
+  font-family: Poppins,sans-serif;
+  font-size: 14px;
+}
+
+.headline-employee {
+  color: #28303d;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 64px;
+  text-transform: inherit;
+}
+
+.h3-content{
+  font-size: 21.14px;
+}
+.v-window__container{
+  line-height: normal;
+}
+.v-data-table-header__content{
+  min-width: max-content;
+}
+// .v-window .v-theme--light{
+//   line-height: normal;
+// }
+
+.w-300{
+  width: 300px;
+}
+.h-100{
+  height: 100px;
+}
+
+.center-pos{
+  display: flex;
+  justify-content: center;
+}
+.active_tab_color{
+  background-color: '' !important;
+}
+
+
+// .Vue-Toastification__toast--default.my-custom-toast-class {
+//   background-color: red;
+// }
+
+// /* Applied to the toast body when using regular strings as content */
+// .Vue-Toastification__toast-body.custom-class-1 {
+//   font-size: 30px;
+// }
+
+// /* Applied to a wrapper div when using a custom component as content */
+// .Vue-Toastification__toast-component-body.custom-class-2 {
+//   max-width: 40px !important;
+// }
+
+// .Vue-Toastification__container .top-right{
+//   min-height: 60px;
+// }
+
+body {
+  font-family: "Poppins", Helvetica, Arial, sans-serif !important;
+  .Vue-Toastification__toast-body {
+    font-family: "Poppins" !important;
+    font-size: 13px;
+    font-weight: 500 !important;
+  }
+  .Vue-Toastification__toast {
+    padding: 8px 24px;
+    align-items: center;
+    min-height: 60px;
+    width: 100px;
+  }
+}
+
+.textarea-bg{
+  .v-textarea textarea{
+    color: #28303d !important;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    line-height: 20px !important;
+    overflow-y: scroll;
+  }
+}
+
+.textarea-delete-acc{
+  .v-textarea textarea{
+    color: #28303d !important;
+    font-size: 15px !important;
+    font-weight: 400 !important;
+    line-height: 20px !important;
+    overflow-y: scroll;
+  }
+}
+
+.textarea-disable-referral{
+  .v-input .v-input--horizontal .v-input--density-compact .v-input--dirty .v-text-field{
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    line-height: 20px !important;
+  }
+
+  .v-field__field input {
+    padding: 0.7rem;
+  }
+  .v-field__outline__end{
+    border-right: none !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+}
+
+.copylinkbtn:hover{
+  box-shadow: 0 8px 25px -8px #82e0dd !important;
+}
+
+.v-combobox__selection{
+  .v-input{
+    margin-top: 2px;
+  }
+  .v-chip.v-chip--density-default{
+    color: black !important;
+  }
+}
+
+.v-tooltip--content {
+  &.v-tooltip-dark {
+    background: red !important;
+  }
+  background: red !important;
+}
+
+.v-tooltip-bg{
+  background-color: black !important;
+  font-size: small !important;
+}
+
+.textarea-disable-referral{
+  .v-field__field{
+    font-size: large !important;
+  }
+}
+
+.v_combobox_bg{
+  .v-field__input{
+    input{
+      margin-top: 3px !important;
+      align-self: center;
+      display: flex;
+      justify-content: center;
+    }
+    max-height: 35px;
+  }
+}
+
+.v3ti .v3ti-tag{
+  background-color: #D3D3D3 !important;
+  text-emphasis-color: black;
+  .v3ti-tag-content{
+    color: black;
+  }
+  height: 40px;
+}
+
+.v3ti--focus{
+  border: 1px solid #9ca3af !important;
+  box-shadow: none !important;
+}
+.v3ti-remove-tag{
+  color: black !important;
+}
+
+.v3ti-tag{
+  height: 35px;
+}
+.v3ti .v3ti-content{
+  height: 36px;
+}
+
+.text-dark {
+  border-radius: 10px !important;
+  .v-slide-group__content {
+    background-color: #E7E7E7 !important;
+    height: 53px !important;
+  }
+  .v-slide-group{
+    border-block-end: none !important;
+  }
+  .v-btn{
+    height: 53px !important;
+  }
+  .v-tabs .v-tabs--horizontal{
+    height: 53px !important;
+  }
+  .v-slide-group{
+    height: 53px !important;
+  }
+}
+
+.slider-btn-content{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 3px;
+}
+
+.schedule_pay_btn{
+  min-width: 220px;
+  min-height: 50px;
+  text-align: center;
+  font-size: large;
+}
+.recurring_dialog_btn{
+  min-width: 200px;
+  min-height: 50px;
+  text-align: center;
+  font-size: large;
+}
+.recurring_dialog_btn:hover{
+  box-shadow:0 8px 25px -8px !important
+}
+
+.schedule_pay_btn:hover{
+  box-shadow:0 8px 25px -8px !important
+}
+
+.datetime-picker-bg{
+  .v-field__input{
+    color: white;
+    height: 50px;
+  }
+  .v-input__control{
+    border-radius: 8px;
+  }
+  .v-field__append-inner{
+    color: white;
+    font-size: large;
+  }
+  .v-label{
+    color: white !important;
+  }
+}
+
+.recurring-pay{
+  .v-label{
+    color: white !important;
+  }
+  .v-select .v-field.v-field {
+    text-align: center;
+    height: 50px;
+    font-size: medium;
+  }
+  .v-label{
+    font-size: medium !important;
+  }
+  // .v-selection .v-field__outline {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   align-self: center;
+  // }
+  .v-select .v-field.v-field{
+    align-items: center !important;
+  }
+  .v-field .v-field--active{
+    align-items: center !important;
+  }
+  .v-field__append-inner {
+    padding-top: 0px !important;
+  }
+}
+
+.chips-bg{
+  .v-chip.v-chip--density-default{
+    font-size: 14px !important;
+  }
+}
+
+.failed-payment-notification-card{
+  h2 {
+   color: white;
+  }
+  span {
+    line-height: normal !important;
+  }
+}
+
+.grecaptcha-badge { 
+  visibility: hidden !important;
+}
+
+.not-allowed {
+  pointer-events: auto !important;
+  cursor: not-allowed !important;
+}
+
+.disabled-field {
+  pointer-events: none !important;
+  color: black;
+}
+
+.hide-append-icon {
+  .v-selection-control__wrapper {
+    display: none !important;
+  }
+}
+
+.grey-bg{
+  color: #7F7F7F !important;
+}
+
+.delete-account-headline {
+  color: #28303d;
+  font-size: 28px !important;
+  font-weight: 600 !important;
+  text-transform: capitalize;
+  line-height: normal;
+}
+
+.dlt-btn {
+  background-color: #82e0dd !important;
+  font-size: 17px;
+  width: 100px;
+  height: 45px !important;
+}
+
+.cnc-btn {
+  background-color: #28303d !important;
+  font-size: 17px;
+  width: 90px;
+  height: 45px !important;
+}
+
+.font-large {
+  font-size: 25px;
+  font-weight: 600 !important;
+  line-height: normal;
+}
+
+.payment-third-party{
+  .v-label{
+    color: white !important;
+  }
+  .v-select .v-field.v-field {
+    text-align: center;
+    height: 50px;
+    font-size: medium;
+  }
+  .v-label{
+    font-size: medium !important;
+  }
+  // .v-selection .v-field__outline {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   align-self: center;
+  // }
+  .v-select .v-field.v-field{
+    align-items: center !important;
+  }
+  .v-field .v-field--active{
+    align-items: center !important;
+  }
+  .v-field__append-inner {
+    padding-top: 0px !important;
+  }
+}
+
+.payment-card-btn{
+  width: 250px;
+  height: 50px !important;
+}
+
+.d-underline{
+  text-decoration: underline;
+  cursor: pointer;
+  line-height: normal;
+}
+
+.otp-box{
+  margin: 10px 0 0 0 !important;
+  .box{
+    box-shadow: none !important;
+    border-bottom: 1px solid #fff !important;
+    border-radius: 0 !important;
+    outline: none;
+    &.box-no-data{
+      background-color: transparent;
+    }
+    &.box-bg-white{
+      background-color: transparent;
+    }
+  }
+  input {
+    color: white;
+  }
+}
+.enter-pin-box{
+  margin-bottom: 40px;
+}
+.valid-text{
+  margin-top: 5px;
+}
+
+.success-message-box {
+  background-color: green;
+  line-height: normal !important;
+}
+
+.error-message-box{
+  background-color: red;
+  line-height: normal !important;
+}
+
+.password-field{
+  .v-field__append-inner {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.bg-pos{
+  align-items: center !important;
+  justify-content: center !important;
+  color: black;
+}
