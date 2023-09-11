@@ -2,7 +2,7 @@
 import navItems from "@/navigation/vertical";
 import { useThemeConfig } from "@core/composable/useThemeConfig";
 import { useI18n } from "vue-i18n";
-import { self } from '@/stores/self';
+// import { self } from '@/stores/self';
 import UserProfile from "@/layouts/components/UserProfile.vue";
 import settings from '@/layouts/components/Settings.vue'
 import NavBarI18n from '@/layouts/components/NavBarI18n.vue'
@@ -21,19 +21,19 @@ const router = useRouter()
 const navigateToMessagePage = () => {
   router.push({name:'messagelist'})
 }
-const user = self();
+// const user = self();
 
-const navItemsVertical = computed(()=>{
-  let role = user.userData && user.userData.role
-  // check and return only list which are accessBy role-wise
-  return navItems.filter((item: any)=> {
-    return item.accessBy.includes(role)
-  })
-})
+// const navItemsVertical = computed(()=>{
+//   let role = user.userData && user.userData.role
+//   // check and return only list which are accessBy role-wise
+//   return navItems.filter((item: any)=> {
+//     return item.accessBy.includes(role)
+//   })
+// })
 </script>
 
 <template>
-  <VerticalNavLayout :nav-items="navItemsVertical">
+  <VerticalNavLayout :nav-items="navItems">
     <!-- 👉 navbar -->
     <template #navbar="{ toggleVerticalOverlayNavActive }">
       <div class="d-flex h-100 align-center">

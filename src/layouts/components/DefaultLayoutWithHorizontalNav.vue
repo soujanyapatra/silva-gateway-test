@@ -2,7 +2,7 @@
 import navItems from '@/navigation/horizontal'
 import { useThemeConfig } from '@core/composable/useThemeConfig'
 import { themeConfig } from '@themeConfig'
-import { self } from '@/stores/self';
+// import { self } from '@/stores/self';
 import NavbarThemeSwitcher from '@/layouts/components/NavbarThemeSwitcher.vue'
 import UserProfile from '@/layouts/components/UserProfile.vue'
 import { HorizontalNavLayout } from '@layouts'
@@ -11,18 +11,12 @@ import { VNodeRenderer } from '@layouts/components/VNodeRenderer'
 // import Footer from '@/layouts/components/Footer.vue'
 
 const { appRouteTransition } = useThemeConfig()
-const user = self();
-const navItemsHorizontal = computed(()=>{
-  let role = user.userData && user.userData.role
-  // check and return only list which are accessBy role-wise
-  return navItems.filter((item: any)=> {
-    return item.accessBy.includes(role)
-  })
-})
+// const user = self();
+
 </script>
 
 <template>
-  <HorizontalNavLayout :nav-items="navItemsHorizontal">
+  <HorizontalNavLayout :nav-items="navItems">
     <!-- 👉 navbar -->
     <template #navbar>
       <RouterLink

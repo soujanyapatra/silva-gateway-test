@@ -97,9 +97,9 @@
       import { useRouter } from "vue-router";
       import $http from "@/plugins/axios";
       import { layout } from "@/stores/layout";
-      import{ useNotifyStore } from '../stores/notification';
+      // import{ useNotifyStore } from '../stores/notification';
       import { onBeforeUnmount } from 'vue';      
-      const store = useNotifyStore();
+      // const store = useNotifyStore();
       const layoutScreen = layout();
 
       const { 

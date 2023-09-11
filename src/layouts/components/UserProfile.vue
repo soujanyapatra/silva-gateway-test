@@ -1,12 +1,5 @@
 <template>
   <VCardSubtitle class="user-profile-subtitle-line">
-    <span v-if="userStore.userData && userStore.userData.role" class="user-profile-title float-right"> {{ userStore && userStore.userData ? userStore.userData.companyName : '--' }} </span><br />
-    <p v-if="userStore.userData && userStore.userData.role == 'admin'">
-      <span>{{ userStore.userData && userStore.userData.role }}</span>
-    </p>
-    <div class="mt-1">
-      <small class="small float-right">{{ $t("labels.available") }}</small>
-    </div>
   </VCardSubtitle>
   <VAvatar class="cursor-pointer" color="primary" variant="tonal">
     <img
@@ -37,25 +30,22 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import { useRouter } from "vue-router";
-import { self } from "@/stores/self";
+// import { self } from "@/stores/self";
 
 export default defineComponent({
   setup() {
     const router = useRouter();
-    let userStore = self()
 
     function logOutUser() {
       localStorage.clear()
       // push to the login screen
       router.push("/login");
       setTimeout(() => {
-        userStore.userData = {}
       }, 2000);
     }
     return {
       logOutUser,
       router,
-      userStore
     };
   },
 });

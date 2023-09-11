@@ -8,12 +8,12 @@ import {
 } from "@validators";
 import { useRouter } from "vue-router";
 import { VForm } from "vuetify/components/VForm";
-import { useNotifyStore } from "@/stores/notification";
-import { self } from "@/stores/self";
+// import { useNotifyStore } from "@/stores/notification";
+// import { self } from "@/stores/self";
 
-const store = useNotifyStore();
-const { notify } = storeToRefs(store);
-const notificationStatus: Ref<boolean> = ref(notify.value);
+// const store = useNotifyStore();
+// const { notify } = storeToRefs(store);
+const notificationStatus: Ref<boolean> = ref(false);
 const $toast = useToast();
 let deleteAccountDialog: Ref<boolean> = ref(false);
 let reasonDelete: Ref<any> = ref();
@@ -23,7 +23,7 @@ let layoutScreen = layout();
 const userdata: Ref<any> = ref(JSON.parse(localStorage.getItem("user") as any));
 let id: Ref<any> = ref("");
 id = userdata.value ? userdata.value.id : "";
-let userSelf = self()
+let userSelf = ref(false)
 
 // Delete Account
 async function DeleteAccount() {
@@ -55,30 +55,6 @@ async function DeleteAccount() {
 }
 
 // Notification change
-async function notificationChange() {
-  try {
-    layoutScreen.fullScreenLoad = true;
-    const param = {
-      userId: id.value,
-      isAllowed: userSelf.userData.allowNotifications,
-    };
-
-    store.setNotify(notificationStatus.value);
-
-    let res: { isAllowed: string } = await $http.put(
-      "auth/user/notifications",
-      param
-    );
-    if (res) {
-      layoutScreen.fullScreenLoad = false;
-      $toast.success(res.data.message);
-    }
-  } catch (e) {
-    $toast.error("error occurred");
-  } finally {
-    layoutScreen.fullScreenLoad = false;
-  }
-}
 </script>
 
 <template>
@@ -102,8 +78,7 @@ async function notificationChange() {
 
                 <span>
                   <VSwitch
-                    v-model="userSelf.userData.allowNotifications"
-                    @input="notificationChange()"
+                    v-model="userSelf"
                 /></span>
               </div>
             </VListItemTitle>
