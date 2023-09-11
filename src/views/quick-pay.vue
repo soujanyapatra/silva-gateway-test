@@ -1,7 +1,7 @@
 <template>
   <section>
     <VCard>
-      <VCardText class="text-content font-weight-larger"> Products </VCardText>
+      <VCardText class="font-weight-x-larger d-flex mt-10 mb-10"> Products </VCardText>
       <VRow>
         <VCol cols="4">
           <VImg
@@ -123,21 +123,21 @@ export default defineComponent({
 
     function goToPayment(param: any, productName: any) {
       if (productName === "airPod") {
-        liveKey.value = "43lih5u345435435";
-        referenceNo.value = "432423";
-        merchantId.value = "324324f-32423432kdslfdsf";
+        liveKey.value = "sl_live_U2eW2cLvdhLpq8E4SF6EmwhXZ3YIyeNtcL6R97diGgFYCzosSg3qPZVvNERIa23GI3hVBIt8PxznjvysIE9qKZ4l9Zt6MIfhjaeyQTKJ5zhvG5CSFUC6oIUzM0COhZeHZg3Kmvv0qCctpFuHNQj8E1UxBLbGxeC6szKc";
+        referenceNo.value = "524727160000";
+        merchantId.value = "70941";
       } else if (productName === "phone") {
-        liveKey.value = "43liewrewrw5435";
-        referenceNo.value = "43556786";
-        merchantId.value = "324324f-adsfdsfsdfds3432";
+        liveKey.value = "sl_live_U2eW2cLvdhLpq8E4SF6EmwhXZ3YIyeNtcL6R97diGgFYCzosSg3qPZVvNERIa23GI3hVBIt8PxznjvysIE9qKZ4l9Zt6MIfhjaeyQTKJ5zhvG5CSFUC6oIUzM0COhZeHZg3Kmvv0qCctpFuHNQj8E1UxBLbGxeC6szKc";
+        referenceNo.value = "524727160000";
+        merchantId.value = "70941";
       } else if (productName === "watch") {
-        liveKey.value = "43lih5dfkjdsf35435";
-        referenceNo.value = "2232432";
-        merchantId.value = "324324f-23213dfdsfsdf";
+        liveKey.value = "sl_live_U2eW2cLvdhLpq8E4SF6EmwhXZ3YIyeNtcL6R97diGgFYCzosSg3qPZVvNERIa23GI3hVBIt8PxznjvysIE9qKZ4l9Zt6MIfhjaeyQTKJ5zhvG5CSFUC6oIUzM0COhZeHZg3Kmvv0qCctpFuHNQj8E1UxBLbGxeC6szKc";
+        referenceNo.value = "524727160000";
+        merchantId.value = "70941";
       } else if (productName === "refrigerator") {
-        liveKey.value = "dsjkufh89fhkdsjf";
-        referenceNo.value = "32456457";
-        merchantId.value = "324324f-fdsf435gfdg";
+        liveKey.value = "sl_live_U2eW2cLvdhLpq8E4SF6EmwhXZ3YIyeNtcL6R97diGgFYCzosSg3qPZVvNERIa23GI3hVBIt8PxznjvysIE9qKZ4l9Zt6MIfhjaeyQTKJ5zhvG5CSFUC6oIUzM0COhZeHZg3Kmvv0qCctpFuHNQj8E1UxBLbGxeC6szKc";
+        referenceNo.value = "524727160000";
+        merchantId.value = "70941";
       }
       router.push({
         name: "payment",

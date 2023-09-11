@@ -6,13 +6,21 @@
       <VCard width="500">
         <VCardText>
           <div class="font-weight-x-larger" style="margin-bottom: 50px">
-            pay with
+            pay from
           </div>
           <div
             id="buttons-for-merchant"
             :payment-info="`apikey=${route.query.apiKey}&merchantId=${route.query.merchantId}&referenceNo=${route.query.referenceNo}&environment=live&amount=${route.query.amount/10}&redirectURL=${route.query.redirectURL}`"
           ></div>
-          <VBtn variant="flat" class="mt-10 mb-15" size="large"> stripe </VBtn>
+          <VCol>
+            <VBtn variant="flat" class="mt-5 mb-2 disable" size="large"> stripe </VBtn>
+          </VCol>
+          <VCol>
+            <VBtn variant="flat" class="mt-2 mb-2 disable" size="large"> Credit card </VBtn>
+          </VCol>
+          <VCol>
+            <VBtn variant="flat" class="mt-2 mb-15 disable" size="large"> Debit card </VBtn>
+          </VCol>
         </VCardText>
       </VCard>
     </VRow>
@@ -32,3 +40,8 @@ onMounted(async () => {
   document.head.appendChild(script);
 });
 </script>
+<style scoped>
+.disable{
+  cursor: not-allowed;
+}
+</style>
