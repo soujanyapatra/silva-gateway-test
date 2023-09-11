@@ -29,7 +29,6 @@
 
 @media (min-width: 960px) {
   .skin--bordered .auth-card-v2 {
-    -webkit-border-start: 1px solid rgba(var(--v-border-color), var(--v-border-opacity)) !important;
-            border-inline-start: 1px solid rgba(var(--v-border-color), var(--v-border-opacity)) !important;
+    border-inline-start: 1px solid rgba(var(--v-border-color), var(--v-border-opacity)) !important;
   }
 }/*# sourceMappingURL=page-auth.css.map */

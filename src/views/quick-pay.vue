@@ -5,14 +5,14 @@
       <VRow>
         <VCol cols="4">
           <VImg
-            src="../../src/assets/images/earpod.jpg"
+            src="https://rukminim2.flixcart.com/image/416/416/kpinwy80/headphone/x/r/e/mmef2hn-a-apple-original-imag3qe9hphsevrt.jpeg?q=70"
             alt=""
-            height="150"
-            width="150"
+            height="120"
+            width="120"
           >
           </VImg>
         </VCol>
-        <VCol cols="4" class="mt-15">
+        <VCol cols="4" class="mt-12">
           <div class="d-flex align-centre">
             <div class="d-flex flex-column">
               <span class="text-content">Apple AirPods (2nd Generation) </span>
@@ -20,7 +20,7 @@
             </div>
           </div>
         </VCol>
-        <VCol cols="3" class="mt-15 ml-5">
+        <VCol cols="3" class="mt-12 ml-5">
           <VBtn class="float-right" @click="goToPayment(38, 'airPod')">
             Buy
           </VBtn>
@@ -30,14 +30,15 @@
       <VRow>
         <VCol cols="4">
           <VImg
-            src="../../src/assets/images/mobile.webp"
+            src="https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/9/e/e/-original-imaghx9q5rvcdghy.jpeg?q=70"
             alt=""
-            height="150"
-            width="150"
+            height="120"
+            width="120"
+            class="ml-3"
           >
           </VImg>
         </VCol>
-        <VCol cols="4" class="mt-15">
+        <VCol cols="4" class="mt-12">
           <div class="d-flex align-centre">
             <div class="d-flex flex-column">
               <span class="text-content">I phone 14</span>
@@ -45,7 +46,7 @@
             </div>
           </div>
         </VCol>
-        <VCol cols="3" class="mt-15 ml-5">
+        <VCol cols="3" class="mt-12 ml-5">
           <VBtn class="float-right" @click="goToPayment(680, 'phone')">
             Buy
           </VBtn>
@@ -55,7 +56,7 @@
       <VRow>
         <VCol cols="4">
           <VImg
-            src="../../src/assets/images/watch.jpg"
+            src="https://rukminim2.flixcart.com/image/832/832/xif0q/watch/4/1/i/-original-imagnvwumakwug6c.jpeg?q=70"
             alt=""
             height="150"
             width="150"
@@ -82,7 +83,7 @@
       <VRow>
         <VCol cols="4">
           <VImg
-            src="../../src/assets/images/refrigarator.webp"
+            src="https://rukminim2.flixcart.com/image/416/416/xif0q/refrigerator-new/8/3/3/-original-imagmkergdzdvqhc.jpeg?q=70"
             alt=""
             height="150"
             width="150"
