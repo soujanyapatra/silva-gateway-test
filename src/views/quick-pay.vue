@@ -1,7 +1,7 @@
 <template>
   <section>
     <VCard>
-      <VCardText class="text-content"> Products </VCardText>
+      <VCardText class="text-content font-weight-larger"> Products </VCardText>
       <VRow>
         <VCol cols="4">
           <VImg
@@ -26,6 +26,7 @@
           </VBtn>
         </VCol>
       </VRow>
+      <VDivider />
       <VRow>
         <VCol cols="4">
           <VImg
@@ -50,6 +51,7 @@
           </VBtn>
         </VCol>
       </VRow>
+      <VDivider />
       <VRow>
         <VCol cols="4">
           <VImg
@@ -76,6 +78,7 @@
           </VBtn>
         </VCol>
       </VRow>
+      <VDivider />
       <VRow>
         <VCol cols="4">
           <VImg

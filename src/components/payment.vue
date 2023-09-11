@@ -10,7 +10,7 @@
           </div>
           <div
             id="buttons-for-merchant"
-            :payment-info="`apikey=${route.query.apiKey}&merchantId=${route.query.merchantId}&referenceNo=${route.query.referenceNo}&environment=live&amount=${route.query.amount}&redirectURL=${route.query.redirectURL}`"
+            :payment-info="`apikey=${route.query.apiKey}&merchantId=${route.query.merchantId}&referenceNo=${route.query.referenceNo}&environment=live&amount=${route.query.amount/10}&redirectURL=${route.query.redirectURL}`"
           ></div>
           <VBtn variant="flat" class="mt-10 mb-15" size="large"> stripe </VBtn>
         </VCardText>
