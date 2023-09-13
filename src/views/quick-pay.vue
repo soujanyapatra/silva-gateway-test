@@ -120,7 +120,7 @@ export default defineComponent({
     const merchantId = ref();
     const referenceNo = ref();
     const environment = ref("live");
-    const redirectURL = ref("https://silvatree.co");
+    const redirectURL = ref("https://sandbox.silvatree.co/test/");
 
     function goToPayment(param: any, productName: any) {
       if (productName === "airPod") {
