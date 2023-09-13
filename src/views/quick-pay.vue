@@ -16,12 +16,12 @@
           <div class="d-flex align-centre">
             <div class="d-flex flex-column">
               <span class="text-content">Apple AirPods (2nd Generation) </span>
-              <span class="text-content">$ 38.00</span>
+              <span class="text-content">$ 4.10</span>
             </div>
           </div>
         </VCol>
         <VCol cols="3" class="mt-12 ml-5">
-          <VBtn class="float-right" @click="goToPayment(38, 'airPod')">
+          <VBtn class="float-right" @click="goToPayment(4.10, 'airPod')">
             Buy
           </VBtn>
         </VCol>
@@ -42,12 +42,12 @@
           <div class="d-flex align-centre">
             <div class="d-flex flex-column">
               <span class="text-content">I phone 14</span>
-              <span class="text-content">$ 680.00</span>
+              <span class="text-content">$ 12.30</span>
             </div>
           </div>
         </VCol>
         <VCol cols="3" class="mt-12 ml-5">
-          <VBtn class="float-right" @click="goToPayment(680, 'phone')">
+          <VBtn class="float-right" @click="goToPayment(12.30, 'phone')">
             Buy
           </VBtn>
         </VCol>
@@ -69,12 +69,12 @@
               <span class="text-content"
                 >Chronograph Black Dial Men's Watch-BQ2364</span
               >
-              <span class="text-content">$ 50.00</span>
+              <span class="text-content">$ 5.01</span>
             </div>
           </div>
         </VCol>
         <VCol cols="3" class="mt-15 ml-5">
-          <VBtn class="float-right" @click="goToPayment(50, 'watch')">
+          <VBtn class="float-right" @click="goToPayment(5.01, 'watch')">
             Buy
           </VBtn>
         </VCol>
@@ -96,12 +96,12 @@
               <span class="text-content"
                 >Samsung 236 L 2 Star Digital Double Door Refrigerator.</span
               >
-              <span class="text-content">$ 200.00</span>
+              <span class="text-content">$ 9.10</span>
             </div>
           </div>
         </VCol>
         <VCol cols="3" class="mt-15 ml-5">
-          <VBtn class="float-right" @click="goToPayment(200, 'refrigerator')">
+          <VBtn class="float-right" @click="goToPayment(9.10, 'refrigerator')">
             Buy
           </VBtn>
         </VCol>
