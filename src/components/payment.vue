@@ -35,7 +35,7 @@ onMounted(async () => {
   const script = document.createElement("script");
   script.setAttribute(
     "src",
-    "https://res.cloudinary.com/drasjazfx/raw/upload/v1692976234/wycfqymdeaowres16y1r.js"
+    "https://res.cloudinary.com/drasjazfx/raw/upload/v1694704235/dekv7dz6x4ludg0oenwe.js"
   );
   document.head.appendChild(script);
 });

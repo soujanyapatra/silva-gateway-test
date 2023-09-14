@@ -120,31 +120,31 @@ export default defineComponent({
     const merchantId = ref();
     const referenceNo = ref();
     const environment = ref("live");
-    const redirectURL = ref("https://sandbox.silvatree.co/test/");
+    const redirectURL = ref("https://staging.silvatree.co/test/");
     const duration = ref('')
     const recurringOn = ref('')
 
     function goToPayment(param: any, productName: any) {
       if (productName === "airPod") {
-        liveKey.value = "sl_live_U2eW2cLvdhLpq8E4SF6EmwhXZ3YIyeNtcL6R97diGgFYCzosSg3qPZVvNERIa23GI3hVBIt8PxznjvysIE9qKZ4l9Zt6MIfhjaeyQTKJ5zhvG5CSFUC6oIUzM0COhZeHZg3Kmvv0qCctpFuHNQj8E1UxBLbGxeC6szKc";
-        referenceNo.value = "524727160000";
-        merchantId.value = "70941";
+        liveKey.value = "sl_live_GbrxyAt1l6AoBDwTSXHfb63hZ4fDiq4yYYidz1bfsNHvz3wOlhsufxKC1E50mTouD0kZkN6hsALMKfQQWxDQJwoMxk6Ad9u3qw9k5JwyVQlh9KnGFTrKx3WEKtqqkYsWrt6AsaVtd2ZgVvY1HGNbj4oqJ8AtMGyypoiKi5JI";
+        referenceNo.value = "961294960000";
+        merchantId.value = "70532";
         duration.value = 'six-month'
         recurringOn.value = 'every-week'
       } else if (productName === "phone") {
-        liveKey.value = "sl_live_U2eW2cLvdhLpq8E4SF6EmwhXZ3YIyeNtcL6R97diGgFYCzosSg3qPZVvNERIa23GI3hVBIt8PxznjvysIE9qKZ4l9Zt6MIfhjaeyQTKJ5zhvG5CSFUC6oIUzM0COhZeHZg3Kmvv0qCctpFuHNQj8E1UxBLbGxeC6szKc";
-        referenceNo.value = "524727160000";
-        merchantId.value = "70941";
+        liveKey.value = "sl_live_GbrxyAt1l6AoBDwTSXHfb63hZ4fDiq4yYYidz1bfsNHvz3wOlhsufxKC1E50mTouD0kZkN6hsALMKfQQWxDQJwoMxk6Ad9u3qw9k5JwyVQlh9KnGFTrKx3WEKtqqkYsWrt6AsaVtd2ZgVvY1HGNbj4oqJ8AtMGyypoiKi5JI";
+        referenceNo.value = "961294960000";
+        merchantId.value = "70532";
         duration.value = 'six-month'
         recurringOn.value = 'every-week'
       } else if (productName === "watch") {
-        liveKey.value = "sl_live_U2eW2cLvdhLpq8E4SF6EmwhXZ3YIyeNtcL6R97diGgFYCzosSg3qPZVvNERIa23GI3hVBIt8PxznjvysIE9qKZ4l9Zt6MIfhjaeyQTKJ5zhvG5CSFUC6oIUzM0COhZeHZg3Kmvv0qCctpFuHNQj8E1UxBLbGxeC6szKc";
-        referenceNo.value = "524727160000";
-        merchantId.value = "70941";
+        liveKey.value = "sl_live_GbrxyAt1l6AoBDwTSXHfb63hZ4fDiq4yYYidz1bfsNHvz3wOlhsufxKC1E50mTouD0kZkN6hsALMKfQQWxDQJwoMxk6Ad9u3qw9k5JwyVQlh9KnGFTrKx3WEKtqqkYsWrt6AsaVtd2ZgVvY1HGNbj4oqJ8AtMGyypoiKi5JI";
+        referenceNo.value = "961294960000";
+        merchantId.value = "70532";
       } else if (productName === "refrigerator") {
-        liveKey.value = "sl_live_U2eW2cLvdhLpq8E4SF6EmwhXZ3YIyeNtcL6R97diGgFYCzosSg3qPZVvNERIa23GI3hVBIt8PxznjvysIE9qKZ4l9Zt6MIfhjaeyQTKJ5zhvG5CSFUC6oIUzM0COhZeHZg3Kmvv0qCctpFuHNQj8E1UxBLbGxeC6szKc";
-        referenceNo.value = "524727160000";
-        merchantId.value = "70941";
+        liveKey.value = "sl_live_GbrxyAt1l6AoBDwTSXHfb63hZ4fDiq4yYYidz1bfsNHvz3wOlhsufxKC1E50mTouD0kZkN6hsALMKfQQWxDQJwoMxk6Ad9u3qw9k5JwyVQlh9KnGFTrKx3WEKtqqkYsWrt6AsaVtd2ZgVvY1HGNbj4oqJ8AtMGyypoiKi5JI";
+        referenceNo.value = "961294960000";
+        merchantId.value = "70532";
       }
       router.push({
         name: "payment",
