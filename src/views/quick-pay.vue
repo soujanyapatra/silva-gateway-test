@@ -121,18 +121,22 @@ export default defineComponent({
     const referenceNo = ref();
     const environment = ref("live");
     const redirectURL = ref("https://sandbox.silvatree.co/test/");
-    const duration = ref('six-month')
-    const recurringOn = ref('every-week')
+    const duration = ref('')
+    const recurringOn = ref('')
 
     function goToPayment(param: any, productName: any) {
       if (productName === "airPod") {
         liveKey.value = "sl_live_U2eW2cLvdhLpq8E4SF6EmwhXZ3YIyeNtcL6R97diGgFYCzosSg3qPZVvNERIa23GI3hVBIt8PxznjvysIE9qKZ4l9Zt6MIfhjaeyQTKJ5zhvG5CSFUC6oIUzM0COhZeHZg3Kmvv0qCctpFuHNQj8E1UxBLbGxeC6szKc";
         referenceNo.value = "524727160000";
         merchantId.value = "70941";
+        duration.value = 'six-month'
+        recurringOn.value = 'every-week'
       } else if (productName === "phone") {
         liveKey.value = "sl_live_U2eW2cLvdhLpq8E4SF6EmwhXZ3YIyeNtcL6R97diGgFYCzosSg3qPZVvNERIa23GI3hVBIt8PxznjvysIE9qKZ4l9Zt6MIfhjaeyQTKJ5zhvG5CSFUC6oIUzM0COhZeHZg3Kmvv0qCctpFuHNQj8E1UxBLbGxeC6szKc";
         referenceNo.value = "524727160000";
         merchantId.value = "70941";
+        duration.value = 'six-month'
+        recurringOn.value = 'every-week'
       } else if (productName === "watch") {
         liveKey.value = "sl_live_U2eW2cLvdhLpq8E4SF6EmwhXZ3YIyeNtcL6R97diGgFYCzosSg3qPZVvNERIa23GI3hVBIt8PxznjvysIE9qKZ4l9Zt6MIfhjaeyQTKJ5zhvG5CSFUC6oIUzM0COhZeHZg3Kmvv0qCctpFuHNQj8E1UxBLbGxeC6szKc";
         referenceNo.value = "524727160000";
