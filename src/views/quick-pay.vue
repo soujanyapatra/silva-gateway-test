@@ -121,6 +121,8 @@ export default defineComponent({
     const referenceNo = ref();
     const environment = ref("live");
     const redirectURL = ref("https://sandbox.silvatree.co/test/");
+    const duration = ref('six-month')
+    const recurringOn = ref('every-week')
 
     function goToPayment(param: any, productName: any) {
       if (productName === "airPod") {
@@ -149,6 +151,8 @@ export default defineComponent({
           environment: environment.value,
           redirectURL: redirectURL.value,
           amount: param,
+          recurringOn: recurringOn.value,
+          duration: duration.value
         },
       });
     }

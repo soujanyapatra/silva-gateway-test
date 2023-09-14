@@ -10,7 +10,7 @@
           </div>
           <div
             id="buttons-for-merchant"
-            :payment-info="`apikey=${route.query.apiKey}&merchantId=${route.query.merchantId}&referenceNo=${route.query.referenceNo}&environment=live&amount=${route.query.amount}&redirectURL=${route.query.redirectURL}`"
+            :payment-info="`apikey=${route.query.apiKey}&merchantId=${route.query.merchantId}&referenceNo=${route.query.referenceNo}&environment=live&amount=${route.query.amount}&redirectURL=${route.query.redirectURL}&recurringOn=${route.query.recurringOn}&duration=${route.query.duration}`"
           ></div>
           <VCol>
             <VBtn variant="flat" class="mt-5 mb-2 disable" size="large"> stripe </VBtn>
